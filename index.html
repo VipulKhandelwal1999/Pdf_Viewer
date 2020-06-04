@@ -13,6 +13,7 @@
 
 <body>
   <div class="top-bar">
+    <h1>Custom PDF Viewer</h1>
     <button class="btn" id="prev-page">
       <i class="fas fa-arrow-circle-left"></i> Prev Page
     </button>
@@ -23,9 +24,11 @@
       Page <span id="page-num"></span> of <span id="page-count"></span>
     </span>
   </div>
+  <div class="container"><canvas id="pdf-render"></canvas></div>
 
-  <canvas id="pdf-render"></canvas>
-
+  <footer class="footer">
+    <p class="footer-text">Copyright &copy; 2020. Made By VK</p>
+  </footer>
   <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
   <script src="js/main.js"></script>
 </body>
